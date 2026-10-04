@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manifesto · Romeo</title>
+<meta name="description" content="Why we're building Romeo: understanding should feel like being told a good story.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%23191B22%22/%3E%3Ctext x=%2232%22 y=%2245%22 font-family=%22Georgia%22 font-size=%2238%22 text-anchor=%22middle%22 fill=%22white%22%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=1791107793">
+<style>
+  .mf { max-width: 760px; margin: 0 auto; padding: 170px var(--gutter) 120px; }
+  .mf h1 { margin-bottom: 64px; }
+  .mf p { font: 400 clamp(22px, 2.1vw, 28px)/1.5 var(--serif); letter-spacing: -0.02em; margin: 0 0 1.1em; }
+  .mf .sign { font-family: var(--sans); font-size: 17px; color: var(--graphite); margin-top: 56px; }
+</style>
+</head>
+<body>
+<!-- Liquid glass: the backdrop is bent at the edges with a slight colour split (Chromium; others fall back to blur) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lens" color-interpolation-filters="sRGB" x="-15%" y="-15%" width="130%" height="130%">
+    <feImage result="map" preserveAspectRatio="none" x="0" y="0" width="100%" height="100%" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 60'%3E%3Cdefs%3E%3ClinearGradient id='x' x1='1' x2='0'%3E%3Cstop offset='0' stop-color='%230000'/%3E%3Cstop offset='1' stop-color='%23f00'/%3E%3C/linearGradient%3E%3ClinearGradient id='y' x2='0' y2='1'%3E%3Cstop offset='.12' stop-color='%230000'/%3E%3Cstop offset='.88' stop-color='%2300f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='60' fill='%23000'/%3E%3Crect width='800' height='60' rx='20' fill='url(%23x)'/%3E%3Crect width='800' height='60' rx='20' fill='url(%23y)' style='mix-blend-mode:difference'/%3E%3Crect x='3' y='3' width='794' height='54' rx='20' fill='%23808080' fill-opacity='.75' style='filter:blur(6px)'/%3E%3C/svg%3E"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="-60" xChannelSelector="R" yChannelSelector="G" result="r0"/>
+    <feColorMatrix in="r0" type="matrix" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="r"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="-48" xChannelSelector="R" yChannelSelector="G" result="g0"/>
+    <feColorMatrix in="g0" type="matrix" values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0" result="g"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="-36" xChannelSelector="R" yChannelSelector="G" result="b0"/>
+    <feColorMatrix in="b0" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" result="b"/>
+    <feBlend in="r" in2="g" mode="screen" result="rg"/><feBlend in="rg" in2="b" mode="screen" result="o"/>
+    <feGaussianBlur in="o" stdDeviation="1.05"/>
+  </filter>
+</svg>
+<header class="nav" data-nav>
+  <a class="nav__brand" href="index.html" aria-label="Romeo, home">Romeo</a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="index.html#ask">How it works</a>
+    <a href="index.html#library">Library</a>
+    <a href="manifesto.html">Manifesto</a>
+  </nav>
+  <div class="nav__actions">
+    <a class="btn-primary btn-primary--nav" href="#get"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="dl-arrow" d="M8 2.5v8m-3.5-3.5L8 10.5 11.5 7"/><path d="M3 13.5h10"/></svg><span>Download</span></a>
+  </div>
+</header>
+
+<article class="mf">
+  <h1 class="display display--m">Why do we still learn from walls of text?</h1>
+
+  <p>We have more information than any generation before us, and somehow understand less of it. Every big idea arrives the same way: a wall of text, a dozen tabs, a feed that moves on before we've caught up. So we skim. We nod along. We miss the point.</p>
+
+  <p>It wasn't always like this. For most of history, people learned by listening. Someone sat down and told the story: where it started, why it matters, what happens next. A good story doesn't just inform you. It stays with you.</p>
+
+  <p>Generative media gives us a chance to bring that back. Not to make more content, or louder content, but to make things make sense. One question, explained the way a patient teacher would. Researched, so it's true. Drawn, so you can see it. Narrated, so you can simply listen.</p>
+
+  <p>That's Romeo. Ask about anything: the news, a concept from class, the thing everyone at dinner was talking about. Romeo reads the sources, finds what matters, and turns it into a short animated story made just for you. When you're curious about something mid-story, ask, and the answer joins in.</p>
+
+  <p>We believe understanding should feel like being told a good story by a friend. We believe curiosity deserves better than a search result. And we believe the best stories are the ones you can share.</p>
+
+  <p>Ask anything. Get a story.</p>
+
+  <p class="sign">Ruchit Shah, designer and builder of Romeo</p>
+</article>
+
+<footer id="get" class="get" data-scene="get" aria-labelledby="get-title">
+    <div class="get__world" aria-hidden="true"><img src="assets/scene/world-2.jpg" alt=""></div>
+    <div class="get__copy">
+      <h2 id="get-title" class="display display--m">What are you<br>curious about?</h2>
+      <div class="cta-pair">
+        <a class="btn-primary" href="mailto:ruchitrahulshah@gmail.com?subject=Romeo%20TestFlight%20invite"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="dl-arrow" d="M8 2.5v8m-3.5-3.5L8 10.5 11.5 7"/><path d="M3 13.5h10"/></svg><span>Download Romeo</span></a>
+        <a class="btn-accent" href="https://newsvideo-app.vercel.app" target="_blank" rel="noopener">Try on Web</a>
+      </div>
+      <p class="meta"><span>Free on TestFlight</span><span class="x">×</span><span>A story in a minute</span><span class="x">×</span><span>iPhone and web</span></p>
+      <p class="credit">3D icons by <a href="https://www.thiings.co" target="_blank" rel="noopener">Thiings</a></p>
+    </div>
+  </footer>
+</body>
+</html>
