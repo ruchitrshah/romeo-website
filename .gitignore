@@ -29,3 +29,4 @@ assets/video/d-*
 assets/video/followup.*
 assets/video/p-*
 assets/video/story.*
+.env*
